@@ -1,0 +1,9 @@
+*{
+    padding: 0; /* Zera o padding - espaçamento interno*/
+    
+    margin: 0; /* Zera a margem - espaçamento externo*/
+
+    box-sizing: border-box; /* Faz com que o padding e a borda não aumentem o tamanho do elemento*/
+
+}/* O "*" é para selecionar todos os elementos da página*/
+
