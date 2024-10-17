@@ -1,0 +1,42 @@
+*{ /* seletor universal - seleciona todos os elementos da página */
+    font-family: monospace; /* define qual a fonte do elemento */
+}
+
+body{ /* seleciona todo o corpo do html */
+
+    font-size: 22px; /* define o tamanho da fonte para 22 pixels */
+}
+
+p{ /* seleciona a tag de parágrafo */
+    
+    color: purple; /*define a cor des todos os textos,que estão dentro da tag para roxo*/
+}
+
+/* para selecionar um elemento epecífico,ou um bloco de tags, usamos classe */
+/* devemos colocar ao lado da tag,no html, o atributo "class" */
+/* e no css, colocamos o nome da classe precedido de um ponto */
+
+.gray{
+    color: gray; /*os textos com o a class gray vão ficar com a cor cinza*/
+}
+
+/* para ser mais específico e escolher apenas uma tag para ser selecionada, usamos o id */
+/* ao lado da tag colocamos o atributo id no html*/
+/* e no css, colocamos o nome do id precedido de uma cerquilha */
+
+#second{
+    font-style: italic; /* o segundo parágrafo vai ter o estilo da fonte em itálico */
+}
+
+/* podemos selecionar diferentes tags usando vírgula */
+
+h1, h2{
+    color: seagreen; /* muda a cor da tag h1 e h2  */
+}
+
+/* selecionar uma tag que está dentro da outra */
+
+p > span{
+    text-transform: uppercase; /* transforma o texto ou palavra em maiúsculo */
+    background-color: gold;/* mudar a cor de fundo do elemento */
+}
