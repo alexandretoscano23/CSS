@@ -1,0 +1,21 @@
+body{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5; /* Altura da linha do texto */
+    background-color: papayawhip; /* muda a cor de fundo do elemento */
+    color: darkblue; /* muda a cor da fonte */
+}
+
+/* hexadecimais */
+/* são divididos entre vermelho, verde e azul - RGB */
+/* o maior valor é f */
+
+
+p{
+    /*color: #000;*/ /* preto */
+    /*color: #f00;*/ /* vermelho */
+    /*color: #0f0;*/ /*verde*/
+    /*color: #00f; /*azul*/
+    /*color: rgba(128, 128, 128, 0.904);*/ /* o último valor é a transparência da cor. 0 - transparênte e 1 - nítido*/
+    color: rgb(51, 51, 51); 
+}
