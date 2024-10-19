@@ -1,0 +1,34 @@
+*{
+    margin: 0; /* remove a margem de todos os elementos */
+    padding: 0; /* remove o dimensionamento interno de todos os elementos */
+    box-sizing: border-box;
+}
+
+p{
+    font-size: 32px; /* ocupará o tamanho de 32 px, há mudanças em diferentes tmanhos de tela */
+}
+
+/* % - geralmente usada para definir o dimensionamento de diferentes elementos */
+
+article{
+    width: 50%; /* a largura será de 50% da tela do navegador, em qualquer tamanho de tela */
+}
+
+/* rem é a unidade que normalmente usaremos para tamanho da fonte. Se adapta aos diferentes tamanhos de tela */
+
+h2{
+    font-size: 1rem; /* 1rem equivale a 16px,que é o tamanho padrão, 2 é 32... */
+}
+
+/* 
+em - é uma medida relativa que baseia seu valor na fonte do elemento pai. O tamanho de um elemento definido em "em" irá variar dependendo do tamanho da fonte do seu elemento pai 
+-> ex - 0.5 equivale a metade do tamanho da fonte do elemento pai
+ideal para definir margens, padding e outras propriedades
+Se adapta aos diferentes tamanhos de tela
+*/
+
+h1{
+    font-size: 3rem;
+    background-color: papayawhip;
+    padding: 0.5em; /*equivale a metade da fonte do elemento*/
+}
