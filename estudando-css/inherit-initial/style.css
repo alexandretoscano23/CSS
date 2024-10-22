@@ -1,0 +1,17 @@
+/* inherit - pega as configurações do elemento pai e aplica a ele */
+
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: gray;
+}
+
+.box2{
+    background-color: red;
+}
+
+.box  p{
+    display: inline-block;
+    width: inherit;
+    height: inherit;
+}
