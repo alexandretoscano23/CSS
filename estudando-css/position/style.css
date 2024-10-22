@@ -1,0 +1,49 @@
+table{
+    border-collapse: collapse; /* se as bordas ficarem colidindo,deixa elas em uma única borda */
+    margin: 0 auto;
+    height: 200px;
+   background-color: #faf1f1;
+}
+
+tr,td{
+    vertical-align: middle; /* posição dos elementos (middle - meio)*/
+}
+
+/* menu */
+
+/* ao definir alguma tag (top,left...) como 0 - ele vai para o máximo do canto escolhido */
+
+.menu-fixed{
+   /* position: fixed;*/ /* elemento fixado (acompanha ao rolar a tela) */
+    left: auto; /* espaçamento a esquerda*/
+   top: auto; /* espaçamento ao topo */
+    right: 0; /* espaçamento a direita (totalmente para a direita)*/
+    width: 200px;
+    height: 200px;
+    background-color: #069;
+    border-radius: 50%;
+}
+
+.box{
+    width: 100%; 
+    height: 1400px;
+    background-color: green;
+}
+
+/* position - Absolut */
+
+.menu-absolute{
+    position: absolute; /* segue a proporção da tela do navegador */
+    top: auto;
+    right: 0; 
+     width: 200px;
+     height: 200px;
+     background-color: #069;
+     border-radius: 50%;
+ }
+ 
+ .box2{
+     width: 100%; 
+     height: 1400px;
+     background-color: grey;
+}

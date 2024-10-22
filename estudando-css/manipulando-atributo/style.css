@@ -1,0 +1,12 @@
+/*Pegar todos os links que tenham href com um valor específico*/
+
+a[href="https://google.com"] {
+    background-color: rgb(191, 190, 250);
+}
+
+/* dois elementos - acresecnta vírgula */
+
+a[href="https://google.com"],
+a[href="https://dankicode.com"] {
+    background-color: rgb(191, 190, 250);
+}
