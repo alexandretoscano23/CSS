@@ -1,0 +1,22 @@
+.box{
+    margin-top: 0.1rem;
+    padding: 2rem 5%; /* 2rem para cima e para baixo. e 2% da esquerda e direita */
+    background-color: rgb(220,220,220);
+    position: relative;
+}
+
+.box p{
+    word-wrap:break-word ;/* quebrar o texto para que se caiba na box */
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.white-space{
+    background-color: #333;
+    color: white;
+    width: 100px;
+    /*white-space: nowrap;*/ /* o texto não quebra  */
+   /* white-space: pre;*/ /* interpreta os espaços entre as palavras no texto e quebras de linha */
+    white-space: pre-line; /* interpreta apenas as quebras de linha */
+}
+

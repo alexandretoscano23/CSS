@@ -1,0 +1,18 @@
+main{
+    display: flex; /* elementos um ao lado do outro */
+    /*flex-direction: row-reverse;*/ /* inverte a ordem dos elementos */
+    /*flex-direction: column;*/ /* deixa os elementos em coluna */
+    /*flex-direction: column-reverse;*/ /* inverte a ordem dos elementos em coluna */
+    align-items: center; /* alinha os item ao centro */
+
+}
+
+aside{
+    background-color: #ccc;
+    padding: 2rem 5%;
+}
+
+article{
+    padding: 2rem 5%;
+    background-color: gray;
+}

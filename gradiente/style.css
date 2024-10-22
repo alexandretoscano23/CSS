@@ -1,0 +1,5 @@
+.box{
+    width: 600px;
+    height: 600px;
+    background: linear-gradient(to bottom right,rgb(90, 84, 84),rgb(73, 63, 63),grey); /* começa do vermelho e vai atéo verde (o padrão é - começa de cima para baixo) */ /* to bottom right - termina na direita da parte de baixo  (assim como várias outras combinações*/
+}
