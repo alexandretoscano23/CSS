@@ -1,0 +1,12 @@
+:root{ /* local onde vão ser declaradas as nossas variáveis */
+  --standard-color: #a08f8f; /* variável - Cor Padrão */
+  --standard-width:100px; /* variável - Largura Padrão */
+}
+
+/* utilizando as varáveis criadas */
+
+div{
+    max-width: var(--standard-width);
+    background-color: var(--standard-color);
+    margin: 0 auto; /* centralizado */
+}
