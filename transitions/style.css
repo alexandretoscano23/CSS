@@ -1,0 +1,36 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+div.box{
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    /*transition: 1s;*/ /* transição de 1 segundo */
+    transition-property:width,height ; /* apenas o width e o hight vai ser animado */
+    transition-duration: 2s; /* duração de 2 segundo */
+    /*transition-delay: 1s ;*/ /* delay de 1 segundo até começar a animação */
+    transition-timing-function: linear; /* o frame que vai crescer vai ser sempre o mesmo */
+}
+
+div.box:hover{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+/* form */
+
+form input{
+    width: 200px;
+    height: 20px;
+    border: 1px solid #ccc;
+    transition: 1s;
+}
+
+form input:focus{ /* quando o input tiver focado (clicado)*/
+    border: 1px solid black ;
+    width: 300px;
+}

@@ -1,0 +1,36 @@
+div.box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    border: 1px solid black;
+}
+
+div.box:hover{ /* ao passar o mouse - efetua a animação */
+    animation-name: animation1;/* o nome da minha animação */
+    animation-duration: 5s; /* duração da animação */
+    animation-iteration-count: infinite; /* quantidade de vezes que se repita (infinitas vezes */
+    /*animation-delay: 1s;*/ /* tempo de espera para começar a animação */
+}
+
+@keyframes animation1{ /* nome da minha animação vai recebe */
+    0%{ /* de verde */
+        left: 0px;
+        top: 0px;
+        background-color: green;
+        border: 2px solid black;
+    }
+    25%{ /* em 25% da animação vai mudar para amarelo */
+        left: 200px;
+        top: 10px;
+        background-color: yellow;
+        border-radius: 50%;
+        border: 6px solid black;
+    }
+    100%{ /* para vermelho */ 
+        left: 0px;
+        top: 0px;
+        background-color: red;
+        border: 2px solid black;
+    }
+}
