@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+/* Child */
+ul{
+   list-style-position: inside; /* conseguir visualizar as bolinhas */
+}
+
+ul li:nth-child(2){ /* selecionar o segundo filho da li */  
+    color: red;
+
+}
+
+/* Type */
+span{
+    display: block;
+}
+
+div span:nth-of-type(1){ /* seleciona o tipo do elemento e sua posição dentro de um determinado elemento */
+    color: green;
+}
+
+div p:nth-of-type(2){
+    color: purple;
+}

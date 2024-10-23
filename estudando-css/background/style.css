@@ -1,0 +1,38 @@
+/* configuração padrão */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+}
+
+/* div-bg */
+.bg{
+    width: 500px;
+    height: 450px;
+    margin-top: 2%;
+    margin-left: 25%;
+    border-radius: 4px;
+    box-shadow: 18px 20px 20px rgba(34, 33, 33, 0.473);
+    background-color: #ccc;/* cor de fundo */
+    background-image: url('https://s3.ecompletocarros.dev/images/lojas/285/veiculos/61559/veiculoInfoVeiculoImagesMobile/vehicle_image_1621974824_d41d8cd98f00b204e9800998ecf8427e.jpeg');/* adicionar uma imagem de fundo */
+    background-repeat: no-repeat;/* a imagem não se repete para comrir todo o elemento */
+    background-size: cover;/* a imagem cobre todo o elemento sem se deformar */
+    background-position: left;/* definir a posição da imagem */
+}
+
+/* bg2 */
+.bg2{
+    margin-top: 2%;
+    margin-left: 25%;
+    width: 500px;
+    height: 450px;
+    box-shadow: 18px 20px 20px rgba(34, 33, 33, 0.473);
+    background-color: #ccc;
+    background-image: url('https://img.freepik.com/fotos-premium/um-carro-ferrari-preto-em-uma-garagem-com-a-palavra-ferrari-na-frente_900101-52876.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
