@@ -1,0 +1,115 @@
+/* Configurações */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+/* Form */
+form{
+    width: 50%;
+    max-width: 600px;
+    margin: 1.8rem auto;
+    
+}
+
+/* border */
+form input,select{
+    border-radius: 4px;
+}
+
+form div{
+    text-align: center;
+}
+
+form fieldset{
+    padding: 1.25rem 2.5rem;/* 0 de cima a baixo e 40 esquerda e direita */
+    border: 1px solid #222;
+    border-radius: 8px; 
+    box-shadow: 14px 12px 10px rgba(44, 44, 44, 0.438);
+}
+
+form legend{
+    font-size: 1.1rem;
+    color:#111 ;
+}
+
+/* input */
+div input[type=text]{
+    display: inline-block;/* para poder aplicar dimensões */
+    margin-top: 1.5rem;
+    width: 80%;
+    padding: 0.6rem 1.8rem;
+}
+
+/* removendo o foco dos elementos ao clicar */
+div input[type=text]:focus,
+form select:focus,
+form textarea:focus{/* quendo clicado(em foco) */
+    outline: 0;/* não aparecer a borda preta ao clicar */
+
+}
+
+/* slect */
+form select{
+    width: 80%;
+    margin-top:1.8rem;
+    padding: 0.6rem 1.8rem;
+    display: inline-block;
+}
+
+/* h2 */
+form h2{
+    margin-top: 1.8rem;
+    text-align: center;
+    margin-bottom: 0.8rem;
+}
+
+/* radio */
+.radio-class,
+.check-class{
+    display: flex; /* elementos um ao lado do outro */
+    flex-direction: column; /* elementos em coluna */
+    align-items: flex-start; /* alinhar os elementos para o início */
+    margin-left: 25%;
+}
+
+.radio-class span{
+   margin-left: 0.8rem; 
+   font-size: 1rem;
+   color: #111;
+}
+
+/* elementos check */
+.check-class input{
+    margin-top: 0.5rem;
+}
+
+/* Text Área */
+form textarea{
+    border: 4px;
+    margin-top: 1.8rem;
+    width: 80%;
+    padding: 0.6rem 0.8rem;
+    resize: none;/* o usuário não alterar o tamanho da caixa */
+    background-color: #ebebeb;
+    border-radius: 4px;
+}
+
+/* Botão */
+button{
+    margin-top: 1.8rem;
+    border: none;
+    background-color: #888686;
+    color: white;
+    width: 140px;
+    height: 30px;
+    cursor: pointer;/* mudar o cursor do mouse para indicar que é clicável */
+    box-shadow: 8px 6px 10px rgba(31, 31, 31, 0.438);
+    border-radius: 4px; 
+}
+
