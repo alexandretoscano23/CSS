@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 html, body{
     height: 100%;
 }
@@ -104,7 +105,7 @@ form textarea{
 button{
     margin-top: 1.8rem;
     border: none;
-    background-color: #888686;
+    background-color: #807e7e;
     color: white;
     width: 140px;
     height: 30px;
@@ -112,4 +113,35 @@ button{
     box-shadow: 8px 6px 10px rgba(31, 31, 31, 0.438);
     border-radius: 4px; 
 }
+
+/* estilizando botão de envio de arquivo */
+
+input[type=file]{
+    display: none;
+}
+
+label[for=file]{
+    background-color: #807e7e;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;/* mudar o cursor do mouse para indicar que é clicável */
+    box-shadow: 8px 6px 10px rgba(31, 31, 31, 0.438);
+    border-radius: 4px;
+}
+
+
+/* estilizando a select box */
+
+.select{
+    background-color: #c2c2c2;
+    border: 1px solid #a1a1a1;
+    width: 80%;
+    height: 50%;
+    appearance: none; /* remove o padrão da select box*/
+    background-image: url('https://img.myloview.com.br/fotomurais/icone-de-seta-no-elegante-estilo-plano-isolado-simbolo-de-seta-para-seu-design-de-web-site-logotipo-app-interface-do-usuario-ilustracao-vetorial-700-125517622.jpg');
+    background-size: 30px 30px;
+    background-position:right ;
+    background-repeat: no-repeat;
+}
+
 

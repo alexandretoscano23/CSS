@@ -36,19 +36,19 @@
            <div class="radio-class">
                <!-- João Pessoa -->
                 <div>
-                    <input type="radio" name="cidade" id="cidade" value="joão-pessoa"><span>João Pessoa</span><!-- é importante ter o mesmo nome e o id para que apenas uma radio seja selecionada. -->
+                    <input type="radio" name="cidade[]" id="cidade" value="joão-pessoa"><span>João Pessoa</span><!-- é importante ter o mesmo nome e o id para que apenas uma radio seja selecionada. -->
                 </div>
                 <!-- Bananeiras -->
                 <div>
-                    <input type="radio" name="cidade" id="cidade" value="bananeiras"><span>Bananeiras</span>
+                    <input type="radio" name="cidade[]" id="cidade" value="bananeiras"><span>Bananeiras</span>
                 </div>
                 <!-- Campina Grande -->
                 <div>
-                    <input type="radio" name="cidade" id="cidade" value="campina-grande"><span>Campina Grande</span>
+                    <input type="radio" name="cidade[]" id="cidade" value="campina-grande"><span>Campina Grande</span>
                 </div>
                 <!-- solânea -->
                 <div>
-                    <input type="radio" name="cidade" id="cidade" value="solânea"><span>Solânea</span>
+                    <input type="radio" name="cidade[]" id="cidade" value="solânea"><span>Solânea</span>
                 </div>
            </div><!-- radio-class -->
 
@@ -90,6 +90,7 @@
     <form action="">
         <fieldset>
             <input type="file" name="file" id="file"><!-- selecionar arquivo -->
+            <label for="file">Adicionar Arquivo</label>
 
             <legend>Arquivo</legend>
         </fieldset>
@@ -100,11 +101,32 @@
     <!-- Personalizando select box -->
     <form action="">
         <fieldset>
-
+            <select name="" id="" class="select">
+                <option value=""></option>
+            </select>
 
 
             <legend>Personalizando</legend>
         </fieldset>
     </form>
+
+    <!-- Personalizando check box -->
+     <form action="">
+        <fieldset>
+            <div>
+                <input type="checkbox" name="check" id="check1" >
+
+                <label for="check1" class="label-check"></label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="check" id="check2">
+            
+                <label for="check2" class="label-check"></label>
+        </div>
+
+            <legend>CheckBox</legend>
+        </fieldset>
+     </form>
 </body>
 </html>
