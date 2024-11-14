@@ -1,0 +1,27 @@
+.btn{
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    color:rgb(189, 58, 80) ;
+    background-color:pink ;
+    border: 10px solid rgb(185, 33, 59);
+    border-radius: 5px;
+
+    /*Propriedades transitions*/
+    /* transition-property: transform; define a qual propriedade o efeito deve ser aplicado */
+    /* transition-duration: 0.3s; define quanto tempo o efeito deve durar para ser concluído */
+    /* transition-timing-function: ease; define a curva de aceleração para a transição (ease, ease... e linear) */
+    /* transition-delay: 0s;delay antes da transição ocorrer */
+
+    /*maneira mais rápida*/
+    /* transition: transform  0.3s; */
+
+    /*transição de todos as config do elemento de uma vez */
+    transition: all 0.3s;
+}
+
+.btn:hover{
+    transform: translateY(20px); /*mover 10px para cima*/
+    background-color: #111;
+    color: rgb(255, 79, 108);
+}
