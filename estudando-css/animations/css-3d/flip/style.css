@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    padding: 30px;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    perspective: 1500px; /*perspectiva de distância do elemento em relação a quem vê*/
+}
+
+.box:hover .box-content{
+    transform: rotateY(180deg);
+}
+
+.box-content{
+    background-color: pink;
+    width: 200px;
+    height: 200px;
+    position: relative; 
+    transform-style: preserve-3d; /*preservar o 3d aplicado no elemento*/ 
+    transition: ease-in-out 0.6s;
+}
+
+/*os dois elementos o cuparem a mesma camada mas não juntos*/
+.box-front,
+.box-back{
+    position: absolute; /*absoluto em relação ao content*/
+    top: 0;
+    left: 0; 
+    width: 100%; /*100% da largura do content*/
+    height: 100%; /*100% da altura do content*/
+    backface-visibility: hidden; /*não mostrar a face de trás do elemento*/
+}
+
+.box-back{
+    background-color: lightgreen;
+    transform: rotateY(180deg);
+}

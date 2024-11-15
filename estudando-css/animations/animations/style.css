@@ -1,0 +1,80 @@
+/*espaço onde aplicarei as animações - Nome da animação é slideInLeft*/
+@keyframes slideInLeft {
+    /*início da animação - from*/
+    from{
+        transform: translateX(-300px);
+    }
+
+    /*fim da animação*/
+    to{
+        transform: translateX(0);/*de volta a posição original*/
+    }
+}
+
+/*classes utilitárias*/
+.animate{
+    /*duração*/
+    animation-duration: 1s;
+    /*modo de preenchimento*/
+    animation-fill-mode: both;
+}
+
+.animate--infinite{
+    /*repetir infinitamente*/
+    animation-iteration-count: infinite;
+}
+
+.animate--delay-1s{
+    /*delay de 1s*/
+    animation-delay: 1s;
+}
+
+.animate--fast{
+    animation-duration: 0.6s;
+}
+
+.animate--slow{
+    animation-duration: 3s;
+}
+
+/*classe slinde*/
+.slideInLeft{
+    animation-name: slideInLeft;
+    /*tempo de animação*/
+    animation-timing-function: ease-in;
+}
+
+/*div cirle*/
+.circle{
+    background-color: #ccc;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-top: 10%;
+    margin-left: 8%;
+}
+
+/*animação da div circle*/
+@keyframes bounce{
+    0%, 20%, 50%, 80%, 100%{
+        transform: translateY(0);
+    }
+
+    40%{
+        transform: translateY(30px);
+    }
+
+    60%{
+        transform: translateY(-15px);
+    }
+}
+
+/*classe para adicionar a animação Bounce no elemento*/
+.bounce{
+    animation-name: bounce;
+   animation-timing-function: ease-in;
+   animation-duration: 2s;
+   animation-fill-mode: backwards;
+   animation-iteration-count: infinite;
+   
+}
