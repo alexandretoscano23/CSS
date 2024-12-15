@@ -1,0 +1,57 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    /* Estilização */
+    background: hsl(100, 100%, 99%);
+    border: 2px solid hsl(346, 100%, 42%);
+    border-radius: 6px;
+    padding: 1rem;
+    max-width: 300px;
+    height: 300px;
+}
+
+.item{
+    background:hsl(167, 98%, 39%) ;
+    border: 2px solid hsl(12, 76%, 61%);
+    border-radius: 6px;
+    height: 4rem;
+    width: 4rem;
+}
+
+.box{
+    background:hsl(167, 98%, 39%) ;
+    border: 2px solid hsl(12, 76%, 61%);
+    border-radius: 6px;
+    height: 4rem;
+    /* flex */
+    flex-basis: 30px;
+}
+
+#iten1{
+    flex-grow: 2; /* 2x maior que os outros itens */
+}
+
+#iten2,
+#iten3{
+    flex-grow: 1; /* 1x maior que os outros itens */
+}
+
+#iten3{
+    flex-shrink: 3; /* diminui 3x mais que os outros itens */
+}
+
+/* order - ordenar os elementos */
+#iten1{
+    order: 3;
+}
+
+#iten2{
+    order: 2;
+}
+
+#iten3{
+    order: 1;
+}
